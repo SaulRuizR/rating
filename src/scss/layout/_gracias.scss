@@ -1,0 +1,42 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+.gracias{
+    width: 375px;
+    max-width: 95%;
+    background-color: var.$DarkBlue;
+    border-radius: 1rem;
+    padding: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    img{
+        width: 20rem;
+        margin: 2rem auto;
+    }
+    @include mix.telefono{
+        width: 50rem;
+        padding: 4rem;
+      }
+}
+.calificacion{
+    width: 250px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    color: var.$Orange;
+    text-align: center;
+    background-color: lighten(var.$DarkBlue, 10%);
+}
+.titulo__gracias{
+    color: var.$White;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.parrafo__gracias{
+    color: var.$LightGrey;
+    margin: 0;
+    font-size: 1.85rem;
+    text-align: center;
+}

@@ -1,0 +1,71 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+.rating{
+    width: 375px;
+    max-width: 95%;
+    background-color: var.$VeryDarkBlue;
+    border-radius: 1rem;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    @include mix.telefono{
+      width: 50rem;
+      padding: 4rem;
+    }
+}
+.titulo{
+    color: var.$White;
+}
+.parrafo{
+    color: var.$LightGrey;
+}
+.star{
+    width: 2rem;
+}
+.star__contenedor{
+    background-color: var.$DarkBlue;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 4rem;
+}
+.calif__contenedor{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.boton{
+    border-radius: 50%;
+    border: none;
+    padding: 2rem;
+    width: 6rem;
+    height: 6rem;
+    text-align: center;
+    color:var.$LightGrey;
+    background-color: var.$DarkBlue;
+    &:hover{
+        background-color: var.$Orange;
+        color: var.$White;
+    }
+}
+.submit{
+    display: block;
+    text-align: center;
+    border-radius: 5rem;
+    width: 100%;
+    padding: 2rem 5rem;
+    background-color: var.$Orange;
+    color: var.$White;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    &:hover{
+        background-color: var.$White;
+        color: var.$Orange;
+    }
+}
+.selected{
+    background-color: var.$MediumGrey;
+}
